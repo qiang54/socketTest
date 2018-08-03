@@ -37,7 +37,6 @@ public class removeDuplicateLetters {
 
             if (!stack.isEmpty()){
                 //若当前遍历字符比字符串尾部的字符小，而且未遍历的字符串中还有这个字符，则弹出
-                //Character peek = stack.peek();
                 while (!stack.isEmpty() && c < stack.peek() && count[stack.peek()] != 0) {
                     visited[stack.peek()] = false;
                     stack.pop();
